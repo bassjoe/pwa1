@@ -5,10 +5,15 @@
 		<link rel="icon" href="/pwa1/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/pwa1/internal/start-0cce2588.js">
+	<link rel="modulepreload" href="/pwa1/internal/start-1eedd58b.js">
 	<link rel="modulepreload" href="/pwa1/internal/chunks/index-c3650d4a.js">
 	<link rel="modulepreload" href="/pwa1/internal/layout.svelte-8187eef2.js">
 	<link rel="modulepreload" href="/pwa1/internal/pages/index.svelte-b63b29a9.js">
+				<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/pwa1/service-worker.js');
+		}
+	</script>
 	</head>
 	<body>
 		<div>
@@ -19,7 +24,7 @@
 
 
 		<script type="module" data-hydrate="1oibf46">
-		import { start } from "/pwa1/internal/start-0cce2588.js";
+		import { start } from "/pwa1/internal/start-1eedd58b.js";
 		start({
 			target: document.querySelector('[data-hydrate="1oibf46"]').parentNode,
 			paths: {"base":"/pwa1","assets":"/pwa1"},
