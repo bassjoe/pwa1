@@ -9,6 +9,9 @@ const config = {
 		prerender: {
 			default: true
 		},
+		paths: {
+			base: dev ? '' : '/pwa1',
+		},
 		appDir: 'internal'
 	}
 };
