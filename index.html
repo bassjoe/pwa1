@@ -2,21 +2,21 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<link rel="manifest" href="manifest.json" />
+		<link rel="icon" href="/pwa1/favicon.png" />
+		<link rel="manifest" href="/pwa1/manifest.json" />
 		<meta name="description" content="This is PWA #1.">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="darkturquoise">
-		<link rel="apple-touch-icon" href="icon-192.png">
+		<link rel="apple-touch-icon" href="/pwa1/icon-192.png">
 		<meta http-equiv="content-security-policy" content=""><title>PWA-1</title>
-	<link rel="modulepreload" href="/_app/immutable/start-7c8d75a9.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-54ae59b6.js">
-	<link rel="modulepreload" href="/_app/immutable/layout.svelte-323690ba.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-1ba87086.js">
+	<link rel="modulepreload" href="/pwa1/internal/immutable/start-6f967a80.js">
+	<link rel="modulepreload" href="/pwa1/internal/immutable/chunks/index-54ae59b6.js">
+	<link rel="modulepreload" href="/pwa1/internal/immutable/layout.svelte-323690ba.js">
+	<link rel="modulepreload" href="/pwa1/internal/immutable/pages/index.svelte-1ba87086.js">
 			<script>
 		if ('serviceWorker' in navigator) {
 			addEventListener('load', () => {
-				navigator.serviceWorker.register('/service-worker.js');
+				navigator.serviceWorker.register('/pwa1/service-worker.js');
 			});
 		}
 	</script>
@@ -32,10 +32,10 @@
 
 
 		<script type="module" data-sveltekit-hydrate="1cg1e2u">
-		import { start } from "/_app/immutable/start-7c8d75a9.js";
+		import { start } from "/pwa1/internal/immutable/start-6f967a80.js";
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="1cg1e2u"]').parentNode,
-			paths: {"base":"","assets":""},
+			paths: {"base":"/pwa1","assets":"/pwa1"},
 			session: {},
 			route: true,
 			spa: false,
