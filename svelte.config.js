@@ -10,7 +10,7 @@ const config = {
 			default: true
 		},
 		paths: {
-			base: '/pwa1'
+			base: dev ? '' : '/pwa1'
 		},
 		appDir: 'internal'
 	}
